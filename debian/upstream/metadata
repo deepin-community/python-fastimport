@@ -1,0 +1,5 @@
+Bug-Database: https://github.com/jelmer/python-fastimport/issues
+Bug-Submit: https://github.com/jelmer/python-fastimport/issues/new
+Repository: https://github.com/jelmer/python-fastimport.git
+Repository-Browse: https://github.com/jelmer/python-fastimport
+Repository-Tag-Prefix: fastimport-

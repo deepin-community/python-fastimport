@@ -1,0 +1,9 @@
+#!/usr/bin/make -f
+
+%:
+	dh $* --with python3 --buildsystem=pybuild
+
+ifeq (,$(findstring nocheck,$(DEB_BUILD_OPTIONS)))
+override_dh_auto_test:
+	PYTHONPATH=. python3 -m unittest fastimport.tests.test_suite
+endif

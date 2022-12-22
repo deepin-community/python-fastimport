@@ -1,0 +1,220 @@
+python-fastimport (0.9.14-1) unstable; urgency=medium
+
+  * Drop pypy support.
+  * Update fields Vcs-Browser, Vcs-Git for maintainer Debian Python Modules
+    Team.
+  * Update maintainer email for merge of DPMT and PAPT.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit.
+  * Update standards version to 4.5.0, no changes needed.
+  * Update watch file format version to 4.
+  * Re-export upstream signing key without extra signatures.
+  * New upstream release.
+  * Bump debhelper from old 12 to 13.
+  * Update standards version to 4.5.1, no changes needed.
+
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Sat, 18 Sep 2021 17:05:33 +0100
+
+python-fastimport (0.9.8-5) unstable; urgency=medium
+
+  * Run autopkgtest for pypy.
+
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Sat, 30 Nov 2019 19:36:27 +0000
+
+python-fastimport (0.9.8-4) unstable; urgency=medium
+
+  * Drop support for Python 2. Closes: #937748
+  * Set Rules-Requires-Root.
+  * Bump standards version to 4.4.1.
+
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Sat, 30 Nov 2019 19:32:09 +0000
+
+python-fastimport (0.9.8-3) unstable; urgency=medium
+
+  * Add Homepage field in debian/upstream/metadata.
+  * Bump debhelper from old 9 to 12.
+  * Re-export upstream signing key without extra signatures.
+  * Remove obsolete fields Name, Contact from debian/upstream/metadata.
+  * Drop unused python-testtools build-dependency.
+
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Mon, 16 Sep 2019 07:48:02 +0000
+
+python-fastimport (0.9.8-2) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * d/control: Remove ancient X-Python-Version field
+  * d/control: Remove ancient X-Python3-Version field
+
+  [ Jelmer Vernooĳ ]
+  * Add debian/upstream/metadata.
+
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Mon, 14 May 2018 07:56:39 +0200
+
+python-fastimport (0.9.8-1) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * d/control: Set Vcs-* to salsa.debian.org
+  * d/copyright: Use https protocol in Format field
+  * d/control: Remove XS-Testsuite field, not needed anymore
+
+  [ Jelmer Vernooĳ ]
+  * New upstream release.
+   + Drop Cope_with_bytestirngs_in_utf8_bytes_string.patch, which is now
+     included upstream.
+  * Bump debhelper version to 9.
+
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Sun, 15 Apr 2018 13:33:51 +0100
+
+python-fastimport (0.9.6-3) unstable; urgency=medium
+
+  * Team upload.
+  * Add patch from upstream to fix a crash with UTF-8 encoded author names.
+    LP: #1647101
+
+ -- Mattia Rizzolo <mattia@debian.org>  Sun, 23 Apr 2017 08:40:09 +0200
+
+python-fastimport (0.9.6-2) unstable; urgency=medium
+
+  * Only mark as breaking older versions of bzr-fastimport <<
+    0.13.0+bzr361-1.
+
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Sun, 24 Apr 2016 16:26:53 +0000
+
+python-fastimport (0.9.6-1) unstable; urgency=medium
+
+  * New upstream release.
+   + Adds support for python 3.4.
+
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Tue, 19 Apr 2016 23:44:19 +0000
+
+python-fastimport (0.9.5-1) unstable; urgency=low
+
+  [ Ondřej Nový ]
+  * New upstream release.
+  * d/control: Added Vcs-Browser and fixed Vcs-Git (https)
+
+  [ Jelmer Vernooĳ ]
+  * Bump standards version (no changes).
+  * Add python3-fastimport package, now that upstream has added Python3
+    support.
+
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Mon, 18 Apr 2016 22:09:05 +0200
+
+python-fastimport (0.9.4-4) unstable; urgency=medium
+
+  * Fix license names in debian/copyright.
+  * Drop '-b unstable' from Vcs-Git header.
+  * debian/watch: Fix pypi URL.
+  * Remove unused bzr-builddeb.conf.
+
+ -- Jelmer Vernooij <jelmer@debian.org>  Sun, 20 Dec 2015 01:06:55 +0000
+
+python-fastimport (0.9.4-3) unstable; urgency=medium
+
+  * Update Vcs-Git, Vcs-Browser and Maintainer fields to reflect the
+    dulwich package is now maintained by the Debian Python Modules
+    packaging team.
+  * Fix watch URL.
+
+ -- Jelmer Vernooij <jelmer@debian.org>  Sat, 07 Feb 2015 17:49:21 +0100
+
+python-fastimport (0.9.4-2) unstable; urgency=medium
+
+  * Add pypy package.
+  * Bump standards version to 3.9.6 (no changes).
+
+ -- Jelmer Vernooij <jelmer@debian.org>  Sun, 30 Nov 2014 18:31:35 +0000
+
+python-fastimport (0.9.4-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Use canonical URL in Vcs-Git header.
+  * Add branch to Vcs-Git.
+
+ -- Jelmer Vernooij <jelmer@debian.org>  Sun, 06 Jul 2014 01:46:59 +0200
+
+python-fastimport (0.9.3-2) unstable; urgency=medium
+
+  * Add Breaks: for bzr-fastimport without version, as all versions that
+    have been packaged in Debian break with the current version of
+    python-fastimport. Closes: #747900
+
+ -- Jelmer Vernooij <jelmer@debian.org>  Tue, 13 May 2014 01:23:15 +0200
+
+python-fastimport (0.9.3-1) unstable; urgency=low
+
+  * Add XS-Testsuite header. Closes: #692669
+  * Add upstream signing key.
+  * Update watch file.
+  * New upstream release.
+  * Bump standards version to 3.9.5 (no changes).
+  * Migrate packaging to Git.
+
+ -- Jelmer Vernooij <jelmer@debian.org>  Sat, 01 Mar 2014 15:42:21 +0000
+
+python-fastimport (0.9.2-1) unstable; urgency=low
+
+  * New upstream release.
+    + Add breaks for bzr-fastimport << 0.13 since this release removes some
+      bzr-fastimport-specific code which now lives in bzr-fastimport itself.
+
+ -- Jelmer Vernooij <jelmer@debian.org>  Wed, 04 Apr 2012 03:07:49 +0200
+
+python-fastimport (0.9.1-1) unstable; urgency=low
+
+  * Add machine-parseable copyright file.
+  * Update watch file for new release location.
+  * Add basic tests for autopkgtest.
+  * New upstream release.
+  * Bump standards version to 3.9.3 (no changes).
+
+ -- Jelmer Vernooij <jelmer@debian.org>  Tue, 28 Feb 2012 13:20:01 +0100
+
+python-fastimport (0.9.0-3.1) unstable; urgency=low
+
+  * Non-maintainer upload (just a rebuild to add Python 2.7 and
+    dropPython 2.5 support)
+
+ -- Piotr Ożarowski <piotr@debian.org>  Sat, 16 Apr 2011 13:00:23 +0200
+
+python-fastimport (0.9.0-3) unstable; urgency=low
+
+  * Switch to dh_python2.
+  * Switch to debhelper 7, drop cdbs.
+
+ -- Jelmer Vernooij <jelmer@debian.org>  Mon, 07 Mar 2011 15:44:44 +0100
+
+python-fastimport (0.9.0-2) unstable; urgency=low
+
+  * Add watch file.
+  * Simplify test run code.
+
+ -- Jelmer Vernooij <jelmer@debian.org>  Mon, 31 Jan 2011 02:06:28 +0100
+
+python-fastimport (0.9.0-1) unstable; urgency=low
+
+  * New upstream release.
+   + Fixes typo in setup.py. Thanks Jonathan Nieder. Closes: #611511
+
+ -- Jelmer Vernooij <jelmer@debian.org>  Mon, 31 Jan 2011 01:45:24 +0100
+
+python-fastimport (0.9.0~bzr298-1) unstable; urgency=low
+
+  * New upstream snapshot.
+   + Avoids tracking unset marks. LP: #477886
+  * Require testtools 0.9.2 to run the test suite.
+  * Drop versioned dependency on python-support. Closes: #603232
+
+ -- Jelmer Vernooij <jelmer@debian.org>  Wed, 17 Nov 2010 14:34:03 +0100
+
+python-fastimport (0.9.0~bzr293-1) unstable; urgency=low
+
+  * New upstream snapshot.
+  * Add replaces line for python-fastimport. Closes: #602595
+
+ -- Jelmer Vernooij <jelmer@debian.org>  Sat, 06 Nov 2010 18:08:14 +0100
+
+python-fastimport (0.9.0~bzr291-1) unstable; urgency=low
+
+  * Initial release. Closes: #598490
+
+ -- Jelmer Vernooij <jelmer@debian.org>  Sat, 04 Sep 2010 16:45:00 +0200
